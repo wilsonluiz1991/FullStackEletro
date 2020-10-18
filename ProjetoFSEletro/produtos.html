@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head> 
+        <meta charset="UTF-8">
+        <title>Produtos - Full Stack Eletro</title>
+        <link rel="stylesheet" href="./css/estilo.css">
+        <script src="./js/funcoes.js"></script>
+        </head>
+    <body>
+        <!-- inicio do menu-->
+        <nav class="menu">
+            <a href="index.html"><font color="white"><img width="100px" src="./img/fullstacklogo.jpg" alt="Full Stack Eletro"></font></a>
+            <a href="produtos.html"><font color="white">Produtos</font></a>
+            <a href="loja.html"><font color="white">Nossas lojas</font></a>
+            <a href="contato.html"><font color="white">Contato</font></a>
+    </nav>
+        <!-- fim do menu-->
+        <header>
+        <h1> Produtos</h1>
+        </header>
+        <hr>
+
+                
+                    <div class="categoria">
+                    <h3>Categorias</h3>
+                    <ul>
+                        <li onclick="exibir_todos()">todos (15)</li>
+                        <li onclick="exibir_categoria('geladeira')">Geladeiras (4)</li>
+                        <li onclick="exibir_categoria('fogao')">Fogões (4)</li>
+                        <li onclick="exibir_categoria('micro')">Microondas (4)</li>
+                        <li onclick="exibir_categoria('lavaroupa')">Lava roupas (3)</li>
+                        
+                    </ul>
+                </div>
+                
+                    <div class="produtos">
+                    <div class="box_produto" id="lavaroupa" style="display:block;">
+                    <img src="./img/lava1.jpg" width="180px" onclick="destaque(this)">
+                    <br>
+                    <p class=" descricao"> Lavadora de Roupas Electrolux  Inox</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 4.349,O0</strike><p>
+                    <p class="preco"> R$3.549,00<p>
+                    </div>
+                    <div class="box_produto" id="fogao"style="display:block;">
+                    <img src="./img/1fog.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Fogão Consul 5 Bocas Inox</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 649,O0</strike><p>
+                    <p class="preco"> R$549,00</p>
+                    </div>
+                    <div class="box_produto" id="geladeira" style="display:block;">
+                    <img src="./img/2gel.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Geladeira Electrolux forst free</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 4.599,O0</strike><p>
+                    <p class="preco"> R$ 4.549,00</p>
+                    </div>
+                    <div class="box_produto" id="micro" style="display:block;">
+                    <img src="./img/3mic.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Microondas 21 litros Panasonic</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 549,O0</strike></p>
+                    <p class="preco"> R$ 499,00</p>
+                    </div>
+                    <div class="box_produto" id="fogao" style="display:block;">
+                    <img src="./img/4fog.jpg" width="120px"onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Fogão 4 bocas agata smaltec</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 749,O0</strike></p>
+                    <p class="preco"> R$ 699,00</p>
+                    </div>
+                    <div>
+                    <div class="box_produto" id="geladeira" style="display:block;">
+                    <img src="./img/5gel.jpg" width="120px" onclick="destaque(this)">
+                     <br>
+                     <p class="descricao">Geladeira Electrolux forst free Bottom</p>
+                     <hr>
+                     <p class="descricao"><strike>R$ 5.599,O0</strike></p>
+                     <p class="preco"> R$ 4.499,00</p>
+                    </div>
+                    <div class="box_produto" id="lavaroupa" style="display:block;">
+                    <img src="./img/lava2.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Lavadoura Brastemp 15kg titânio</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 5.299,O0</strike></p>
+                    <p class="preco"> R$ 4.799,00</p>
+                    </div>
+                    <div class="box_produto" id="micro" style="display:block;">
+                    <img src="./img/6mic.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Microondas consul 20 litros inox</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 699,O0</strike></p>
+                    <p class="preco"> R$ 649,00</p>
+                    </div>
+                <div class="box_produto" id="fogao" style="display:block;">
+                    <img src="./img/7fog.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Fogão 4 bocas atlas branco</p>
+                    <hr>
+                    <p class="preco"><strike>R$ 749,O0</strike></p>
+                    <p class="preco"> R$ 699,00</p>
+                </div>
+               
+                <div class="box_produto" id="geladeira" style="display:block;">
+                    <img src="./img/8gel.jpg" width="170px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Geladeira Electrolux forst free duplex</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 6.799,O0</strike></p>
+                    <p class="preco"> R$ 5.700,00</p>
+                    </div>
+                
+                <div class="box_produto" id="micro" style="display:block;">
+                        <img src="./img/9mic.jpg" width="120px" onclick="destaque(this)">
+                        <br>
+                        <p class="descricao">Microondas consul 32 litros inox</p>
+                        <hr>
+                        <p class="descricao"><strike>R$ 649,O0</strike></p>
+                        <p class="preco"> R$ 600,00</p>
+                </div>
+                <div class="box_produto" id="lavaroupa" style="display:block;">
+                    <img src="./img/lava3.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Lavadoura Midea Inverter 11Kg Branca</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 4.649,O0</strike></p>
+                    <p class="preco"> R$ 3.600,00</font></p>
+                </div>
+                <div class="box_produto" id="fogao" style="display:block;">
+                    <img src="./img/10fog.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Fogão 4 bocas supreme dako</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 799,O0</strike></p>
+                    <p class="preco"> R$ 599,00</p>
+                </div>
+                <div class="box_produto" id="geladeira" style="display:block;">
+                    <img src="./img/11gel.jpg" width="165px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Geladeira Electrolux forst free</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 6.899,O0</strike></p>
+                    <p class="preco"> R$ 5.699,00</p>
+                </div>
+                <div class="box_produto" id="micro" style="display:block;">
+                    <img src="./img/12mic.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Microondas philco 25 litro preto</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 799,O0</strike></p>
+                    <p class="preco"> R$ 650,00</p>
+                </div>
+            </div>
+                 
+            
+        
+        
+        <footer id="rodape">
+            <p id="formasdepagamento"><b>Formas de pagamento</b></p>
+        <img width="250px" src="./img/pag.jpeg" alt="Formas de pagamento">
+             <p>&copy;Recode Pro</p></footer>
+    </body>
+
+</html>
