@@ -7,13 +7,11 @@
         
         </head>
     <body>
-        <!-- inicio do menu-->
-        <nav class="menu">
-            <a href="index.php"><font color="white"><img width="100px" src="./img/fullstacklogo.jpg" alt="Full Stack Eletro"></font></a></td>
-            <a href="produtos.php"><font color="white">Produtos</font></a></td>
-            <a href="loja.php"><font color="white">Nossas lojas</font></a></td>
-            <a href="contato.php"><font color="white">Contato</font></a></td>
-    </nav>
+        <!-- começo do menu-->
+        <?php
+        include('menu.html');
+        
+        ?>
         <!-- fim do menu-->
         <h2> Nossas lojas</h2>
         <hr>
